@@ -2,7 +2,8 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 import random
 
-bot = Bot(token="7864244507:AAEfNjZSVsN9NSdTOvxJrxhMSuUsuyURXFU")  # ← сюда вставь свой токен от BotFather
+import os
+bot = Bot(token=os.getenv("7864244507:AAEfNjZSVsN9NSdTOvxJrxhMSuUsuyURXFU"))  # ← сюда вставь свой токен от BotFather
 dp = Dispatcher(bot)
 
 users = {}  # user_id: {"bank": 1000, "sequence": [100, 100]}
